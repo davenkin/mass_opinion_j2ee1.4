@@ -1,1 +1,6 @@
 This is a demo website for learning j2ee1.4
+
+created project using:
+mvn archetype:create -DgroupId=davenkin -DartifactId=mass-opinion-j2ee -DarchetypeArtefactId=maven-archetype-webapp
+
+
