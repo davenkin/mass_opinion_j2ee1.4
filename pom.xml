@@ -17,5 +17,40 @@
   </dependencies>
   <build>
     <finalName>mass-opinion-j2ee</finalName>
+<plugins>
+    <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven2-plugin</artifactId>
+        <version>1.2.0</version>
+        <configuration>
+            <container>
+                <containerId>jboss5x</containerId>
+                <home>/Users/twer/software/jboss-5.0.1.GA</home>
+                <append>false</append>
+                <log>${project.build.directory}/logs/jboss5x.log</log>
+                <output>${project.build.directory}/logs/jboss5x.out</output>
+                <timeout>300000</timeout><!-- 5 minutes -->
+            </container>
+            <configuration>
+                <type>existing</type>
+                <home>/Users/twer/software/jboss-5.0.1.GA/server/default</home>
+                <properties>
+                    <cargo.servlet.port>8080</cargo.servlet.port>
+                    <cargo.jboss.configuration>default</cargo.jboss.configuration>
+                    <cargo.rmi.port>1099</cargo.rmi.port>
+                    <cargo.logging>high</cargo.logging>
+                </properties>
+                <deployables>
+                    <!-- application to deploy -->
+                    <deployable>
+                        <groupId>${project.groupId}</groupId>
+                        <artifactId>${project.artifactId}</artifactId>
+                        <type>war</type>
+                    </deployable>
+                </deployables>
+            </configuration>
+        </configuration>
+    </plugin>
+</plugins>
   </build>
 </project>
