@@ -11,7 +11,12 @@ public class HelloWorldBean implements SessionBean
     {
         return "Hello World from " + name;
     }
-    
+
+
+    public void ejbCreate() throws EJBException, RemoteException
+    {
+    }
+
     public void ejbActivate() throws EJBException, RemoteException
     {
         //To change body of implemented methods use File | Settings | File Templates.

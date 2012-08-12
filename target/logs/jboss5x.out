@@ -1,0 +1,101 @@
+19:49:15,238 INFO  [ServerImpl] Starting JBoss (Microcontainer)...
+19:49:15,239 INFO  [ServerImpl] Release ID: JBoss [Morpheus] 5.0.1.GA (build: SVNTag=JBoss_5_0_1_GA date=200902231221)
+19:49:15,239 INFO  [ServerImpl] Bootstrap URL: null
+19:49:15,239 INFO  [ServerImpl] Home Dir: /Users/twer/software/jboss-5.0.1.GA
+19:49:15,239 INFO  [ServerImpl] Home URL: file:/Users/twer/software/jboss-5.0.1.GA/
+19:49:15,240 INFO  [ServerImpl] Library URL: file:/Users/twer/software/jboss-5.0.1.GA/lib/
+19:49:15,240 INFO  [ServerImpl] Patch URL: null
+19:49:15,240 INFO  [ServerImpl] Common Base URL: file:/Users/twer/software/jboss-5.0.1.GA/common/
+19:49:15,240 INFO  [ServerImpl] Common Library URL: file:/Users/twer/software/jboss-5.0.1.GA/common/lib/
+19:49:15,240 INFO  [ServerImpl] Server Name: default
+19:49:15,241 INFO  [ServerImpl] Server Base Dir: /Users/twer/software/jboss-5.0.1.GA/server
+19:49:15,241 INFO  [ServerImpl] Server Base URL: file:/Users/twer/software/jboss-5.0.1.GA/server/
+19:49:15,241 INFO  [ServerImpl] Server Config URL: file:/Users/twer/software/jboss-5.0.1.GA/server/default/conf/
+19:49:15,241 INFO  [ServerImpl] Server Home Dir: /Users/twer/software/jboss-5.0.1.GA/server/default
+19:49:15,241 INFO  [ServerImpl] Server Home URL: file:/Users/twer/software/jboss-5.0.1.GA/server/default/
+19:49:15,241 INFO  [ServerImpl] Server Data Dir: /Users/twer/software/jboss-5.0.1.GA/server/default/data
+19:49:15,241 INFO  [ServerImpl] Server Library URL: file:/Users/twer/software/jboss-5.0.1.GA/server/default/lib/
+19:49:15,241 INFO  [ServerImpl] Server Log Dir: /Users/twer/software/jboss-5.0.1.GA/server/default/log
+19:49:15,242 INFO  [ServerImpl] Server Native Dir: /Users/twer/software/jboss-5.0.1.GA/server/default/tmp/native
+19:49:15,242 INFO  [ServerImpl] Server Temp Dir: /Users/twer/software/jboss-5.0.1.GA/server/default/tmp
+19:49:15,242 INFO  [ServerImpl] Server Temp Deploy Dir: /Users/twer/software/jboss-5.0.1.GA/server/default/tmp/deploy
+19:49:15,755 INFO  [ServerImpl] Starting Microcontainer, bootstrapURL=file:/Users/twer/software/jboss-5.0.1.GA/server/default/conf/bootstrap.xml
+19:49:16,217 INFO  [VFSCacheFactory] Initializing VFSCache [org.jboss.virtual.plugins.cache.CombinedVFSCache]
+19:49:16,219 INFO  [VFSCacheFactory] Using VFSCache [CombinedVFSCache[real-cache: null]]
+19:49:16,487 INFO  [CopyMechanism] VFS temp dir: /Users/twer/software/jboss-5.0.1.GA/server/default/tmp
+19:49:16,489 INFO  [ZipEntryContext] VFS force nested jars copy-mode is enabled.
+19:49:17,600 INFO  [ServerInfo] Java version: 1.6.0_33,Apple Inc.
+19:49:17,601 INFO  [ServerInfo] Java Runtime: Java(TM) SE Runtime Environment (build 1.6.0_33-b03-424-10M3720)
+19:49:17,601 INFO  [ServerInfo] Java VM: Java HotSpot(TM) 64-Bit Server VM 20.8-b03-424,Apple Inc.
+19:49:17,601 INFO  [ServerInfo] OS-System: Mac OS X 10.6.8,x86_64
+19:49:17,642 INFO  [JMXKernel] Legacy JMX core initialized
+19:49:20,518 INFO  [ProfileServiceImpl] Loading profile: default from: org.jboss.system.server.profileservice.repository.SerializableDeploymentRepository@1f48b272(root=/Users/twer/software/jboss-5.0.1.GA/server, key=org.jboss.profileservice.spi.ProfileKey@143b82c3[domain=default,server=default,name=default])
+19:49:20,520 INFO  [ProfileImpl] Using repository:org.jboss.system.server.profileservice.repository.SerializableDeploymentRepository@1f48b272(root=/Users/twer/software/jboss-5.0.1.GA/server, key=org.jboss.profileservice.spi.ProfileKey@143b82c3[domain=default,server=default,name=default])
+19:49:20,520 INFO  [ProfileServiceImpl] Loaded profile: ProfileImpl@173dcf55{key=org.jboss.profileservice.spi.ProfileKey@143b82c3[domain=default,server=default,name=default]}
+19:49:21,981 INFO  [WebService] Using RMI server codebase: http://localhost:8083/
+19:49:27,323 INFO  [NativeServerConfig] JBoss Web Services - Stack Native Core
+19:49:27,324 INFO  [NativeServerConfig] 3.0.5.GA
+19:49:34,929 INFO  [Ejb3DependenciesDeployer] Encountered deployment AbstractVFSDeploymentContext@186311884{vfszip:/Users/twer/software/jboss-5.0.1.GA/server/default/deploy/mass-opinion-ear-1.0-SNAPSHOT.ear/mass-opinion-ejb.jar/}
+19:49:34,929 INFO  [Ejb3DependenciesDeployer] Encountered deployment AbstractVFSDeploymentContext@186311884{vfszip:/Users/twer/software/jboss-5.0.1.GA/server/default/deploy/mass-opinion-ear-1.0-SNAPSHOT.ear/mass-opinion-ejb.jar/}
+19:49:34,930 INFO  [Ejb3DependenciesDeployer] Encountered deployment AbstractVFSDeploymentContext@186311884{vfszip:/Users/twer/software/jboss-5.0.1.GA/server/default/deploy/mass-opinion-ear-1.0-SNAPSHOT.ear/mass-opinion-ejb.jar/}
+19:49:36,449 INFO  [JMXConnectorServerService] JMX Connector server: service:jmx:rmi://localhost/jndi/rmi://localhost:1090/jmxconnector
+19:49:36,592 INFO  [MailService] Mail Service bound to java:/Mail
+19:49:38,204 WARN  [JBossASSecurityMetadataStore] WARNING! POTENTIAL SECURITY RISK. It has been detected that the MessageSucker component which sucks messages from one node to another has not had its password changed from the installation default. Please see the JBoss Messaging user guide for instructions on how to do this.
+19:49:38,234 WARN  [AnnotationCreator] No ClassLoader provided, using TCCL: org.jboss.managed.api.annotation.ManagementComponent
+19:49:38,341 INFO  [TransactionManagerService] JBossTS Transaction Service (JTA version) - JBoss Inc.
+19:49:38,341 INFO  [TransactionManagerService] Setting up property manager MBean and JMX layer
+19:49:38,537 INFO  [TransactionManagerService] Initializing recovery manager
+19:49:38,649 INFO  [TransactionManagerService] Recovery manager configured
+19:49:38,649 INFO  [TransactionManagerService] Binding TransactionManager JNDI Reference
+19:49:38,669 INFO  [TransactionManagerService] Starting transaction recovery manager
+19:49:39,070 INFO  [Http11Protocol] Initializing Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+19:49:39,071 INFO  [AjpProtocol] Initializing Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+19:49:39,071 INFO  [StandardService] Starting service jboss.web
+19:49:39,075 INFO  [StandardEngine] Starting Servlet Engine: JBoss Web/2.1.2.GA
+19:49:39,134 INFO  [Catalina] Server startup in 121 ms
+19:49:39,173 INFO  [TomcatDeployment] deploy, ctxPath=/web-console
+19:49:39,860 INFO  [TomcatDeployment] deploy, ctxPath=/jbossws
+19:49:39,895 INFO  [TomcatDeployment] deploy, ctxPath=/invoker
+19:49:40,013 INFO  [RARDeployment] Required license terms exist, view vfszip:/Users/twer/software/jboss-5.0.1.GA/server/default/deploy/jboss-local-jdbc.rar/META-INF/ra.xml
+19:49:40,029 INFO  [RARDeployment] Required license terms exist, view vfszip:/Users/twer/software/jboss-5.0.1.GA/server/default/deploy/jboss-xa-jdbc.rar/META-INF/ra.xml
+19:49:40,068 INFO  [RARDeployment] Required license terms exist, view vfszip:/Users/twer/software/jboss-5.0.1.GA/server/default/deploy/jms-ra.rar/META-INF/ra.xml
+19:49:40,084 INFO  [RARDeployment] Required license terms exist, view vfszip:/Users/twer/software/jboss-5.0.1.GA/server/default/deploy/mail-ra.rar/META-INF/ra.xml
+19:49:40,111 INFO  [RARDeployment] Required license terms exist, view vfszip:/Users/twer/software/jboss-5.0.1.GA/server/default/deploy/quartz-ra.rar/META-INF/ra.xml
+19:49:40,186 INFO  [SimpleThreadPool] Job execution threads will use class loader of thread: main
+19:49:40,211 INFO  [QuartzScheduler] Quartz Scheduler v.1.5.2 created.
+19:49:40,226 INFO  [RAMJobStore] RAMJobStore initialized.
+19:49:40,226 INFO  [StdSchedulerFactory] Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+19:49:40,226 INFO  [StdSchedulerFactory] Quartz scheduler version: 1.5.2
+19:49:40,227 INFO  [QuartzScheduler] Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+19:49:40,624 INFO  [ConnectionFactoryBindingService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' to JNDI name 'java:DefaultDS'
+19:49:40,972 INFO  [ServerPeer] JBoss Messaging 1.4.1.GA server [0] started
+19:49:41,099 INFO  [ConnectionFactory] Connector bisocket://localhost:4457 has leasing enabled, lease period 10000 milliseconds
+19:49:41,099 INFO  [ConnectionFactory] org.jboss.jms.server.connectionfactory.ConnectionFactory@336215d4 started
+19:49:41,168 INFO  [ConnectionFactory] Connector bisocket://localhost:4457 has leasing enabled, lease period 10000 milliseconds
+19:49:41,168 INFO  [ConnectionFactory] org.jboss.jms.server.connectionfactory.ConnectionFactory@26dd559b started
+19:49:41,210 INFO  [QueueService] Queue[/queue/DLQ] started, fullSize=200000, pageSize=2000, downCacheSize=2000
+19:49:41,212 INFO  [QueueService] Queue[/queue/ExpiryQueue] started, fullSize=200000, pageSize=2000, downCacheSize=2000
+19:49:41,213 WARN  [ConnectionFactoryJNDIMapper] supportsFailover attribute is true on connection factory: jboss.messaging.connectionfactory:service=ClusteredConnectionFactory but post office is non clustered. So connection factory will *not* support failover
+19:49:41,213 WARN  [ConnectionFactoryJNDIMapper] supportsLoadBalancing attribute is true on connection factory: jboss.messaging.connectionfactory:service=ClusteredConnectionFactory but post office is non clustered. So connection factory will *not* support load balancing
+19:49:41,214 INFO  [ConnectionFactory] Connector bisocket://localhost:4457 has leasing enabled, lease period 10000 milliseconds
+19:49:41,214 INFO  [ConnectionFactory] org.jboss.jms.server.connectionfactory.ConnectionFactory@9445fbe started
+19:49:41,311 INFO  [ConnectionFactoryBindingService] Bound ConnectionManager 'jboss.jca:service=ConnectionFactoryBinding,name=JmsXA' to JNDI name 'java:JmsXA'
+19:49:41,326 INFO  [TomcatDeployment] deploy, ctxPath=/
+19:49:41,368 INFO  [TomcatDeployment] deploy, ctxPath=/cargocpc
+19:49:41,420 INFO  [TomcatDeployment] deploy, ctxPath=/jmx-console
+19:49:41,458 INFO  [EjbDeployer] installing bean: ejb/mass-opinion-ejb.jar#helloWorldBean,uid323336060
+19:49:41,458 INFO  [EjbDeployer]   with dependencies:
+19:49:41,458 INFO  [EjbDeployer]   and supplies:
+19:49:41,459 INFO  [EjbDeployer] 	jndi:helloWorldBeanJndi
+19:49:41,569 INFO  [TomcatDeployment] deploy, ctxPath=/massopinion
+19:49:41,649 INFO  [EjbModule] Deploying helloWorldBean
+19:49:41,674 WARN  [EjbModule] EJB configured to bypass security. Please verify if this is intended. Bean=helloWorldBean Deployment=vfszip:/Users/twer/software/jboss-5.0.1.GA/server/default/deploy/mass-opinion-ear-1.0-SNAPSHOT.ear/mass-opinion-ejb.jar/
+19:49:41,780 INFO  [ProxyFactory] Bound EJB Home 'helloWorldBean' to jndi 'helloWorldBeanJndi'
+19:49:41,800 INFO  [Http11Protocol] Starting Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+19:49:41,839 INFO  [AjpProtocol] Starting Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+19:49:41,852 INFO  [ServerImpl] JBoss (Microcontainer) [5.0.1.GA (build: SVNTag=JBoss_5_0_1_GA date=200902231221)] Started in 26s:608ms
+19:50:40,181 INFO  [STDOUT] Properties ok
+19:50:40,183 INFO  [STDOUT] context ok
+19:50:40,204 INFO  [STDOUT] home ok
+19:50:40,243 INFO  [STDOUT] remote ok
+19:50:40,262 INFO  [STDOUT] Hello World from dfds

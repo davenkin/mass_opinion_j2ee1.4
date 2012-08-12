@@ -9,7 +9,7 @@
           <remote>davenkin.HelloWorldRemote</remote>
           <ejb-class>davenkin.HelloWorldBean</ejb-class>
           <session-type>Stateless</session-type>
-          <transaction-type>Container </transaction-type>
+          <transaction-type>Container</transaction-type>
       </session>
   </enterprise-beans>
 </ejb-jar>
