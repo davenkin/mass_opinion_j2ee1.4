@@ -26,8 +26,10 @@ public class HelloWorldServlet extends HttpServlet
             System.out.println("Properties ok");
             Context ctx = new InitialContext(props);
             System.out.println("context ok");
-            HelloWorldHome home = (HelloWorldHome)
-                    ctx.lookup("helloWorldBeanJndi");
+            ctx = (Context)ctx.lookup("java:comp/env");
+//            HelloWorldHome home = (HelloWorldHome)ctx.lookup("helloWorldBeanJndi");
+            HelloWorldHome home = (HelloWorldHome)ctx.lookup("ejb/hello");
+
             System.out.println("home ok");
             HelloWorldRemote remote = home.create();
             System.out.println("remote ok");

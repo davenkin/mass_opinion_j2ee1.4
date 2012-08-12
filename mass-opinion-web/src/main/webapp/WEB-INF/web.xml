@@ -12,4 +12,11 @@
         <servlet-name>helloWorldServlet</servlet-name>
         <url-pattern>helloworld</url-pattern>
     </servlet-mapping>
+
+    <ejb-ref>
+        <ejb-ref-name>ejb/hello</ejb-ref-name>
+        <ejb-ref-type>Session</ejb-ref-type>
+        <home>davenkin.HelloWorldHome</home>
+        <remote>davenkin.HelloWorldRemote</remote>
+    </ejb-ref>
 </web-app>
