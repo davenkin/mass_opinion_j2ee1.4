@@ -5,4 +5,5 @@
 *.jar
 *.ear
 *.class
+target/*
 **/target/*
