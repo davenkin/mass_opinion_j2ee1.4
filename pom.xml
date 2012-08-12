@@ -1,56 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>davenkin</groupId>
-  <artifactId>mass-opinion-j2ee</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>mass-opinion-j2ee Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.6</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  <build>
-    <finalName>mass-opinion-j2ee</finalName>
-<plugins>
-    <plugin>
-        <groupId>org.codehaus.cargo</groupId>
-        <artifactId>cargo-maven2-plugin</artifactId>
-        <version>1.2.0</version>
-        <configuration>
-            <container>
-                <containerId>jboss5x</containerId>
-                <home>/Users/twer/software/jboss-5.0.1.GA</home>
-                <append>false</append>
-                <log>${project.build.directory}/logs/jboss5x.log</log>
-                <output>${project.build.directory}/logs/jboss5x.out</output>
-                <timeout>300000</timeout><!-- 5 minutes -->
-            </container>
-            <configuration>
-                <type>existing</type>
-                <home>/Users/twer/software/jboss-5.0.1.GA/server/default</home>
-                <properties>
-                    <cargo.servlet.port>8080</cargo.servlet.port>
-                    <cargo.jboss.configuration>default</cargo.jboss.configuration>
-                    <cargo.rmi.port>1099</cargo.rmi.port>
-                    <cargo.logging>high</cargo.logging>
-                </properties>
-                <deployables>
-                    <!-- application to deploy -->
-                    <deployable>
-                        <groupId>${project.groupId}</groupId>
-                        <artifactId>${project.artifactId}</artifactId>
-                        <type>war</type>
-                    </deployable>
-                </deployables>
-            </configuration>
-        </configuration>
-    </plugin>
-</plugins>
-  </build>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>davenkin</groupId>
+    <artifactId>mass-opinion</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>mass-opinion</name>
+    <modules>
+        <module>mass-opinion-ear</module>
+        <module>mass-opinion-web</module>
+        <module>mass-opinion-ejb</module>
+    </modules>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.2.0</version>
+                <configuration>
+                    <container>
+                        <containerId>jboss5x</containerId>
+                        <home>/Users/twer/software/jboss-5.0.1.GA</home>
+                        <append>false</append>
+                        <log>${project.build.directory}/logs/jboss5x.log</log>
+                        <output>${project.build.directory}/logs/jboss5x.out</output>
+                        <timeout>300000</timeout>
+                    </container>
+                    <configuration>
+                        <type>existing</type>
+                        <home>/Users/twer/software/jboss-5.0.1.GA/server/default</home>
+                        <properties>
+                            <cargo.servlet.port>8080</cargo.servlet.port>
+                            <cargo.jboss.configuration>default</cargo.jboss.configuration>
+                            <cargo.rmi.port>1099</cargo.rmi.port>
+                            <cargo.logging>high</cargo.logging>
+                        </properties>
+                        <deployables>
+                            <deployable>
+                                <type>ear</type>
+                                <location>${project.basedir}/mass-opinion-ear/target/mass-opinion-ear-1.0-SNAPSHOT.ear</location>
+                            </deployable>
+                        </deployables>
+                    </configuration>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
 </project>

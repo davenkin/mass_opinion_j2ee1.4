@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>mass-opinion</artifactId>
+    <groupId>davenkin</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>davenkin</groupId>
+  <artifactId>mass-opinion-ear</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>ear</packaging>
+
+  <name>mass-opinion-ear</name>
+  <url>http://maven.apache.org</url>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.0.2</version>
+        <configuration>
+          <source>1.4</source>
+          <target>1.4</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+            <version>1.4</version>
+            <defaultLibBundleDir>lib</defaultLibBundleDir>
+            <modules>
+                <webModule>
+                    <groupId>davenkin</groupId>
+                    <artifactId>mass-opinion-web</artifactId>
+                    <bundleFileName>mass-opinion-web.war</bundleFileName>
+                    <contextRoot>/massopinion</contextRoot>
+                </webModule>
+                <ejbModule>
+                    <groupId>davenkin</groupId>
+                    <artifactId>mass-opinion-ejb</artifactId>
+                    <bundleFileName>mass-opinion-ejb.jar</bundleFileName>
+                </ejbModule>
+            </modules>
+
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>davenkin</groupId>
+            <artifactId>mass-opinion-web</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>davenkin</groupId>
+            <artifactId>mass-opinion-ejb</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>ejb</type>
+        </dependency>
+    </dependencies>
+
+</project>
